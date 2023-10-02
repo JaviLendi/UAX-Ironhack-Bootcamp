@@ -1,7 +1,40 @@
 header {
-    background-color: rgb(9, 120, 248);
+    background-color: rgb(230, 230, 230);
+}
+
+body {
+    background-color: rgb(230, 230, 230);
 }
 
 #logo img {
-    width: 100px;
+    width: 10em;
+}
+
+.Titulaciones {
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.Titulaciones>h1,
+.grados {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.grados {
+    background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+}
+
+.grados>h2,
+.grados>p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+
+.grados>a {
+    margin: .2rem;
+    font-size: 1rem;
 }
