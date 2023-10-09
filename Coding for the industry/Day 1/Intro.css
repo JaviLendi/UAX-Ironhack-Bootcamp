@@ -37,8 +37,8 @@ body {
 }
 
 .title {
-    text-align: center;
     font-size: 10rem;
+    text-align: center;
 }
 
 .subtitle {
@@ -86,4 +86,11 @@ div {
 footer {
     color: grey;
     text-align: center;
+}
+
+.image{
+    position: relative;
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 0.4rem;
 }
