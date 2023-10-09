@@ -1,5 +1,6 @@
 header {
     background-color: rgb(230, 230, 230);
+    padding: 1rem;
 }
 
 body {
@@ -7,34 +8,82 @@ body {
 }
 
 #logo img {
-    width: 10em;
+    width: 10rem;
 }
 
 .Titulaciones {
     margin: 0;
-    padding: .3rem;
-    background-color: #eee;
-    font: 1rem 'Fira Sans', sans-serif;
+    padding: 0.1rem;
+    background-color:  rgb(230, 230, 230);
+    font: 1rem 'PT Sans', sans-serif;
 }
 
-.Titulaciones>h1,
+.Titulaciones>h1 {
+    margin: .5rem;
+    padding: .6rem;
+    font-size: 2rem;
+    border-radius: 7rem;
+    background-color: rgb(9, 97, 175);
+    color: #eee;
+}
+
 .grados {
     margin: .5rem;
-    padding: .3rem;
+    padding: .6rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    background-color: rgb(9, 97, 175);
+    color:#eee;
+}
+
+.title {
+    text-align: center;
+    font-size: 10rem;
+}
+
+.subtitle {
     font-size: 1.2rem;
 }
 
+
 .grados {
-    background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+    background-color: rgb(161, 158, 158);
 }
 
 .grados>h2,
 .grados>p {
     margin: .2rem;
-    font-size: 1rem;
 }
 
 .grados>a {
     margin: .2rem;
     font-size: 1rem;
+    color:rgb(230, 230, 230);
+}
+
+p {
+    font: 1rem 'PT Sans', sans-serif;
+    font-size: 1rem;
+}
+
+div {
+    background-color: rgb(230, 230, 230);
+}
+
+#col1, #col2, #col3 {
+    border-width: 0rem;
+}
+
+#div1 {
+    float: left;
+    width: 50%;
+}
+
+.margen-inferior {
+    margin-bottom: 1rem;
+}
+
+footer {
+    color: grey;
+    text-align: center;
 }
