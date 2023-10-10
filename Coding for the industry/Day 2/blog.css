@@ -3,19 +3,20 @@ div {
 }
 
 #header {
+    float: left;
+    position: fixed;
     background-color: lightgoldenrodyellow;
     width: 97%;
     height: 7%;
-    position: fixed;
+    margin-left: 0.2%;
+    margin-right: 0.2%;
 }
-
 
 #left_header{
     float: left;
+    position: fixed;
     width: 19.5%;
     height: 7%;
-    position: fixed; 
-    margin: auto;
 
     border: 0;
     border-right: 0.1rem;
@@ -27,8 +28,9 @@ div {
 
 #right_header{
     float: left;
+    position: fixed;
     width: 77.5%;
-    height: 99%;
+    height: 7%;
     margin-left: 21%;
 
 
@@ -41,20 +43,21 @@ div {
 }
 
 #sidebar{
+    float:left;
     background-color: lightcoral;
     width: 19.5%;
     height: 88.5%;
     position: fixed;
-    top: 9.5%;
-    margin: auto;
+    bottom: 2%;
+    margin-left: 0.2%;
+    padding-right: -1%;
 }
 
 #top_sidebar{
+    position: fixed;
     width: 19.5%;
     height: 40%;
-    position: fixed;
     top: 9.5%;
-    margin: auto;
     
     border: 0;
     border-bottom: 0.1rem;
@@ -65,35 +68,37 @@ div {
 }
 
 #bottom_sidebar {
+    position: fixed;
     width: 19%;
     height: 48%;
-    position: fixed;
     bottom: 2%;
-    margin: auto;
 }
 
 #main {
-    background-color: lightgreen;
-    width: 76.5%;
-    height: 80.5%;
     position: fixed;
-    right: 2%;
+    background-color: lightgreen;
+    height: 80.5%;
+    width: 76%;
     bottom: 10%;
-    margin: auto;
+    padding-left: -1%;
+    margin-right: 1.2%;
+    margin-left: 21.4%;
 }
 
 #footer {
-    background-color: lightblue;
-    width: 76.5%;
-    height: 7%;
     position: fixed;
+    background-color: lightblue;
+    width: 76%;
+    height: 7%;
     bottom: 2%;
-    right: 2%;
+    padding-left: -1%;
+    margin-right: 1.2%;
+    margin-left: 21.4%;
 }
 
 p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 2vw;
 
     margin: 0;
     position: absolute;
