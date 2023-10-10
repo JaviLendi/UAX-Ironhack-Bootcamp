@@ -1,0 +1,109 @@
+div {
+    border-radius: 0.35rem;
+}
+
+#header {
+    float: left;
+    position: fixed;
+    background-color: lightgoldenrodyellow;
+    width: 97%;
+    height: 7%;
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+}
+
+#left_header{
+    float: left;
+    position: fixed;
+    width: 19.5%;
+    height: 7%;
+
+    border: 0;
+    border-right: 0.1rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: darkgoldenrod;
+    border-style: solid;
+}
+
+#right_header{
+    float: left;
+    position: fixed;
+    width: 77.5%;
+    height: 7%;
+    margin-left: 21%;
+
+
+    border: 0;
+    border-left: 0.1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: darkgoldenrod;
+    border-style: solid;
+}
+
+#sidebar{
+    float:left;
+    background-color: lightcoral;
+    width: 19.5%;
+    height: 88.5%;
+    position: fixed;
+    bottom: 2%;
+    margin-left: 0.2%;
+    padding-right: -1%;
+}
+
+#top_sidebar{
+    position: fixed;
+    width: 19.5%;
+    height: 40%;
+    top: 9.5%;
+    
+    border: 0;
+    border-bottom: 0.1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: brown;
+    border-style: solid;
+}
+
+#bottom_sidebar {
+    position: fixed;
+    width: 19%;
+    height: 48%;
+    bottom: 2%;
+}
+
+#main {
+    position: fixed;
+    background-color: lightgreen;
+    height: 80.5%;
+    width: 76%;
+    bottom: 10%;
+    padding-left: -1%;
+    margin-right: 1.2%;
+    margin-left: 21.4%;
+}
+
+#footer {
+    position: fixed;
+    background-color: lightblue;
+    width: 76%;
+    height: 7%;
+    bottom: 2%;
+    padding-left: -1%;
+    margin-right: 1.2%;
+    margin-left: 21.4%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
