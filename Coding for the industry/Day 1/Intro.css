@@ -15,16 +15,17 @@ body {
     margin: 0;
 }
 
-
-#logo img {
-    width: 10rem;
-}
-
 .Titulaciones {
-    margin-top: 10vw;
+    margin-top: 12vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 0.1rem;
-    background-color:  rgb(230, 230, 230);
+    background-color: rgb(230, 230, 230);
     font: 1rem 'PT Sans', sans-serif;
+    display: flex;
+    align-self:center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .Titulaciones>h1 {
@@ -37,24 +38,31 @@ body {
 }
 
 .grados {
-    float: left;
     margin: .5rem;
     padding: .6rem;
     font-size: 2rem;
     border-radius: 1rem;
     background-color: rgb(9, 97, 175);
-    color:#eee;
+    color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#div1 {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .title {
     font-size: 10rem;
     text-align: center;
+    width: 100%;
 }
 
 .subtitle {
     font-size: 1.2rem;
 }
-
 
 .grados {
     background-color: rgb(161, 158, 158);
@@ -68,7 +76,7 @@ body {
 .grados>a {
     margin: .2rem;
     font-size: 1rem;
-    color:rgb(230, 230, 230);
+    color: rgb(230, 230, 230);
 }
 
 p {
@@ -84,100 +92,146 @@ div {
     border-width: 0rem;
 }
 
-#div1 {
-    float: left;
-    width: 50%;
-}
-
-.margen-inferior {
-    margin-bottom: 1rem;
-}
-
 footer {
     color: grey;
     text-align: center;
 }
 
-.image{
-    position: relative;
+.image {
+    display: flex;
     width: 100%;
     border-radius: 1rem;
     margin-bottom: 0.4rem;
 }
 
-/* Create a sticky/fixed navbar */
 #navbar {
-  overflow: hidden;
-  background-color: rgb(230, 230, 230);
-  padding: 2rem 2rem; /* Large padding which will shrink on scroll (using JS) */
-  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-  position: fixed; /* Sticky/fixed navbar */
-  width: 100%;
-  top: 0; /* At the top */
-  z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    background-color: rgb(230, 230, 230);
+    padding: 2rem 2rem;
+    transition: 0.4s;
+    z-index: 99;
 }
 
-/* Style the navbar links */
 #navbar a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 1rem;
-  text-decoration: none;
-  font-size: 1rem;
-  font-family: 'PT Sans', sans-serif;
-  border-radius: 2rem;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 2rem;
 }
 
-/* Style the logo */
 #navbar #logo {
-margin-left: 2%;
-margin-bottom: 0%;
-width: 15rem;
-transition: 0.4s;
+    margin-left: 2%;
+    margin-bottom: 0%;
+    transition: 0.4s;
 }
 
-/* Links on mouse-over */
 #navbar a:hover {
-  background-color: #ddd;
-  color: black;
-  border-radius: 2rem;
+    background-color: #ddd;
+    color: black;
+    border-radius: 2rem;
 }
 
-/* Style the active/current link */
 #navbar a.active {
-  background-color: rgb(9, 97, 175);
-  color: white;
+    background-color: rgb(9, 97, 175);
+    color: white;
 }
 
-/* Display some links to the right */
 #navbar-right {
-  float: right;
+    float: right;
 }
 
 .duper, #myLinks, a.icon {
     width: 0;
 }
 
+@media screen and (min-width: 580px) {
+    html {
+        font-size: 10px;
+    }
+
+    .Titulaciones {
+        margin-top: 8rem;
+    }
+
+    .topnav {
+        visibility: hidden;
+    }
+
+    #navbar #logo {
+        display: flex;
+        flex-shrink: 2;
+        width: 16rem;
+        margin: 1rem;
+    }
+
+    #div1 {
+        width: 50%
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 10px;
+    }
+
+    .Titulaciones {
+        margin-top: 8vw;
+    }
+
+    .topnav {
+        visibility: hidden;
+    }
+
+    #navbar a {
+        font-size: 1.5rem;
+    }
+
+    #navbar #logo {
+        display: flex;
+        flex-shrink: 2;
+        width: 16rem;
+        margin: 1rem;
+    }
+
+    #div1 {
+        width: 25%
+    }
+
+}
+
 @media screen and (max-width: 580px) {
     html {
-            font-size: 16px;
+        font-size: 16px;
     }
+
     .mobile-container {
         max-width: 1rem;
         background-color: rgb(230, 230, 230);
         height: 0rem;
         color: white;
+        top: 0rem;
     }
 
     .topnav {
-        overflow: hidden;
-        background-color: rgb(230, 230, 230);
+        display: flex;
+        align-items: flex-start;
         position: fixed;
-        top: 0;
+        overflow: hidden;
+        top: 0rem;
+        background-color: rgb(230, 230, 230);
         width: 100%;
         z-index: 99;
-
     }
 
     .topnav #myLinks {
@@ -206,7 +260,7 @@ transition: 0.4s;
         padding: 1.5rem 2.5rem;
     }
 
-    .topnav a.left{
+    .topnav a.left {
         text-align: right;
         padding-right: 60vw;
         margin-left: 4rem;
@@ -232,6 +286,12 @@ transition: 0.4s;
     }
 
     .Titulaciones {
-        margin-top: 12vw;
+        margin-top: 13vw;
+    }
+
+    #div1 {
+        width: 100%
     }
 }
+
+
