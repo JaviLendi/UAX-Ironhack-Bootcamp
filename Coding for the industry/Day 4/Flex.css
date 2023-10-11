@@ -87,9 +87,6 @@ div {
 #div1 {
     float: left;
     width: 50%;
-}
-
-.margen-inferior {
     margin-bottom: 1rem;
 }
 
@@ -233,5 +230,31 @@ transition: 0.4s;
 
     .Titulaciones {
         margin-top: 12vw;
+    }
+
+    #div1 {
+        float: left;
+        width: 100%;
+        margin-bottom: 0.1rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    html {
+        font-size: 10px;
+    }
+
+    #div1 {
+        float: left;
+        width: 25%;
+        margin-bottom: 2rem;
+    }
+
+    .Titulaciones {
+        margin-top: 6vw;
+    }
+
+    .topnav {
+        visibility: hidden;
     }
 }
