@@ -15,6 +15,37 @@ body {
     margin: 0;
 }
 
+.Bienvenida {
+    display: flex;
+    align-items: center;
+    background-image: url("https://www.uax.com/var/site/storage/images/_aliases/gradient_bg/9/8/2/6/256289-3-esl-ES/d39bfdd7e392-spot-fab.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vw;
+    flex-flow: row wrap;
+    font-family: 'PT Sans', sans-serif;
+    color: #eee;
+}
+
+.img1 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0rem;
+}
+
+.Inicio>h1 {
+    font-size: 3rem;
+    margin-left: 3vw;
+    margin-bottom: -0.1rem;
+}
+
+.Inicio>a {
+    display: flex;
+    margin-left: 3.5vw;
+    font-size: 1rem;
+    width: 80%;
+}
+
 .Titulaciones {
     margin-top: 12vw;
     margin-left: 1rem;
@@ -23,12 +54,11 @@ body {
     background-color: rgb(230, 230, 230);
     font: 1rem 'PT Sans', sans-serif;
     display: flex;
-    align-self:center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    text-align: left;
+    flex-flow: row wrap;
 }
 
-.Titulaciones>h1 {
+.Titulaciones>h2 {
     margin: .5rem;
     padding: .6rem;
     font-size: 2rem;
@@ -68,7 +98,7 @@ body {
     background-color: rgb(161, 158, 158);
 }
 
-.grados>h2,
+.grados>h3,
 .grados>p {
     margin: .2rem;
 }
@@ -82,10 +112,6 @@ body {
 p {
     font: 1rem 'PT Sans', sans-serif;
     font-size: 1rem;
-}
-
-div {
-    background-color: rgb(230, 230, 230);
 }
 
 #col1, #col2, #col3 {
@@ -113,7 +139,7 @@ footer {
     width: 100%;
     top: 0;
     overflow: hidden;
-    background-color: rgb(230, 230, 230);
+    background-image: linear-gradient(rgb(230, 230, 230) 20%, rgba(230, 230, 230, 100));
     padding: 2rem 2rem;
     transition: 0.4s;
     z-index: 99;
@@ -134,6 +160,7 @@ footer {
     margin-left: 2%;
     margin-bottom: 0%;
     transition: 0.4s;
+    max-width: 25%;
 }
 
 #navbar a:hover {
@@ -161,11 +188,12 @@ footer {
     }
 
     .Titulaciones {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 
     .topnav {
         visibility: hidden;
+        margin-top: -2rem;
     }
 
     #navbar #logo {
@@ -178,6 +206,15 @@ footer {
     #div1 {
         width: 50%
     }
+
+    
+    .Inicio>h1 {
+        font-size: 5rem;
+    }
+    
+    .Inicio>a {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -186,15 +223,16 @@ footer {
     }
 
     .Titulaciones {
-        margin-top: 8vw;
+        margin-top: 1vw;
     }
 
     .topnav {
         visibility: hidden;
+        margin-top: -2rem;
     }
 
     #navbar a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #navbar #logo {
@@ -208,25 +246,31 @@ footer {
         width: 25%
     }
 
+    .Inicio>h1 {
+        font-size: 6rem;
+    }
+    
+    .Inicio>a {
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (max-width: 580px) {
     html {
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .mobile-container {
+        display: flex;
+        align-items: flex-start;
         max-width: 1rem;
         background-color: rgb(230, 230, 230);
         height: 0rem;
         color: white;
-        top: 0rem;
     }
 
     .topnav {
-        display: flex;
-        align-items: flex-start;
-        position: fixed;
         overflow: hidden;
         top: 0rem;
         background-color: rgb(230, 230, 230);
@@ -236,6 +280,7 @@ footer {
 
     .topnav #myLinks {
         display: none;
+        align-items: flex-end;
     }
 
     .topnav a {
@@ -243,7 +288,7 @@ footer {
         background-color: #dddddd00;
         padding: 1rem 4rem;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 16px;
         display: block;
         font-family: 'PT Sans', sans-serif;
         border-radius: 4rem;
@@ -261,7 +306,7 @@ footer {
     }
 
     .topnav a.left {
-        text-align: right;
+        text-align: left;
         padding-right: 60vw;
         margin-left: 4rem;
         margin-right: 100%;
@@ -272,7 +317,11 @@ footer {
     }
 
     .topnav a:hover {
-        color: rgb(183, 183, 183);
+        color: rgb(9, 97, 175);
+    }
+
+    .topnav a.left:hover {
+        background-color: rgb(183, 183, 183);
     }
 
     .duper {
@@ -286,11 +335,19 @@ footer {
     }
 
     .Titulaciones {
-        margin-top: 13vw;
+        margin-top: 1vw;
     }
 
     #div1 {
         width: 100%
+    }
+
+    .Inicio>h1 {
+        font-size: 2.5rem;
+    }
+    
+    .Inicio>a {
+        font-size: 0.6rem;
     }
 }
 
