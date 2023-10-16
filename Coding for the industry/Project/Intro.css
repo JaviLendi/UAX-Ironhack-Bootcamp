@@ -31,6 +31,7 @@ body {
     display: flex;
     width: 100%;
     margin-bottom: 0rem;
+
 }
 
 .Inicio>h1 {
@@ -65,6 +66,7 @@ body {
     border-radius: 7rem;
     background-color: rgb(9, 97, 175);
     color: #eee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
 }
 
 .grados {
@@ -73,9 +75,10 @@ body {
     font-size: 2rem;
     border-radius: 1rem;
     background-color: rgb(9, 97, 175);
-    color: #eee;
+    color: #000000;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
 }
 
 #div1 {
@@ -95,7 +98,7 @@ body {
 }
 
 .grados {
-    background-color: rgb(161, 158, 158);
+    background-color: rgb(230, 230, 230);
 }
 
 .grados>h3,
@@ -106,7 +109,7 @@ body {
 .grados>a {
     margin: .2rem;
     font-size: 1rem;
-    color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
 }
 
 p {
@@ -133,7 +136,7 @@ footer {
 #navbar {
     display: flex;
     justify-content: space-between;
-    align-self: flex-start;
+    align-self: center;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -143,6 +146,7 @@ footer {
     padding: 2rem 2rem;
     transition: 0.4s;
     z-index: 99;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
 }
 
 #navbar a {
@@ -215,6 +219,10 @@ footer {
     .Inicio>a {
         font-size: 1rem;
     }
+
+    .Bienvenida {
+        margin-top: 10rem;
+    } 
 }
 
 @media screen and (min-width: 1024px) {
@@ -254,6 +262,10 @@ footer {
         font-size: 2rem;
     }
 
+    .Bienvenida {
+        margin-top: 10rem;
+    } 
+
 }
 
 @media screen and (max-width: 580px) {
@@ -262,8 +274,6 @@ footer {
     }
 
     .mobile-container {
-        display: flex;
-        align-items: flex-start;
         max-width: 1rem;
         background-color: rgb(230, 230, 230);
         height: 0rem;
@@ -272,44 +282,49 @@ footer {
 
     .topnav {
         overflow: hidden;
+        position: fixed;
         top: 0rem;
         background-color: rgb(230, 230, 230);
         width: 100%;
         z-index: 99;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
     }
 
     .topnav #myLinks {
         display: none;
-        align-items: flex-end;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
     }
 
     .topnav a {
         color: rgb(8, 8, 8);
         background-color: #dddddd00;
-        padding: 1rem 4rem;
+        padding: 2rem 4rem;
         text-decoration: none;
         font-size: 16px;
         display: block;
         font-family: 'PT Sans', sans-serif;
         border-radius: 4rem;
         padding-left: 2rem;
-        padding-right: 5rem;
+        width: 100%;
     }
 
     .topnav a.icon {
         background: rgba(230, 230, 230, 0);
-        display: block;
-        position: absolute;
-        right: 0rem;
-        top: 0rem;
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        top: 0.4rem;
         padding: 1.5rem 2.5rem;
     }
 
     .topnav a.left {
-        text-align: left;
+        display: flex;
+        align-items: center;
         padding-right: 60vw;
-        margin-left: 4rem;
-        margin-right: 100%;
+        margin-left: 15vw;
         background-color: rgb(9, 97, 175);
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -349,6 +364,10 @@ footer {
     .Inicio>a {
         font-size: 0.6rem;
     }
+
+    .Bienvenida {
+        margin-top: 0rem;
+    } 
 }
 
 
