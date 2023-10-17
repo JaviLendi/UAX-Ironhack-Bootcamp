@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -6,11 +6,7 @@ html {
     font-size: 13px;
 }
 
-header {
-    background-color: rgb(230, 230, 230);
-}
-
-body {
+body, header {
     background-color: rgb(230, 230, 230);
     margin: 0;
 }
@@ -18,20 +14,12 @@ body {
 .Bienvenida {
     display: flex;
     align-items: center;
-    background-image: url("https://www.uax.com/var/site/storage/images/_aliases/gradient_bg/9/8/2/6/256289-3-esl-ES/d39bfdd7e392-spot-fab.jpg");
-    background-repeat: no-repeat;
+    background: url("https://www.uax.com/var/site/storage/images/_aliases/gradient_bg/9/8/2/6/256289-3-esl-ES/d39bfdd7e392-spot-fab.jpg") no-repeat;
     background-size: cover;
     height: 50vw;
     flex-flow: row wrap;
     font-family: 'PT Sans', sans-serif;
     color: #eee;
-}
-
-.img1 {
-    display: flex;
-    width: 100%;
-    margin-bottom: 0rem;
-
 }
 
 .Inicio>h1 {
@@ -47,10 +35,9 @@ body {
     width: 80%;
 }
 
+.Instalaciones,
 .Titulaciones {
-    margin-top: 12vw;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 2vw 1rem;
     padding: 0.1rem;
     background-color: rgb(230, 230, 230);
     font: 1rem 'PT Sans', sans-serif;
@@ -59,11 +46,12 @@ body {
     flex-flow: row wrap;
 }
 
+.Instalaciones>h2,
 .Titulaciones>h2 {
     margin: .5rem;
     padding: .6rem;
     font-size: 2rem;
-    border-radius: 7rem;
+    border-radius: 1.2rem;
     background-color: rgb(9, 97, 175);
     color: #eee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
@@ -74,11 +62,54 @@ body {
     padding: .6rem;
     font-size: 2rem;
     border-radius: 1rem;
-    background-color: rgb(9, 97, 175);
-    color: #000000;
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
+}
+
+.grados {
+    color: #000000;
+}
+
+.instalacion {
+    margin: .5rem;
+    padding: .6rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
+    align-items: flex-end;
+    align-content: flex-end;
+    color: #ffffff;
+    height: 30rem;
+}
+
+#instalacion1 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgb(0, 3, 10)) ,url("https://www.uax.com/var/site/storage/images/6/2/8/1/61826-4-esl-ES/distribuidor-fablab.jpg");
+    background-size: cover;
+}
+
+#instalacion2 {
+    background:linear-gradient(rgba(70, 131, 180, 0),rgb(0, 3, 10)) ,url("https://www.uax.com/var/site/storage/images/8/0/5/7/87508-1-esl-ES/distributiva-biolab.jpg");
+    background-size: cover;
+}
+
+#instalacion3 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgb(0, 3, 10)) ,url("https://www.uax.com/var/site/storage/images/1/2/7/8/18721-11-esl-ES/distribuidor-uax-fitness.jpg");
+    background-size: cover;
+}
+
+#instalacion4 {
+    background:linear-gradient(rgba(70, 131, 180, 0),rgb(0, 3, 10)) ,url("https://www.uax.com/var/site/storage/images/6/4/6/8/18646-6-esl-ES/distribuidor-hospital-virtual-simulacion.jpg");
+    background-size: cover;
+}
+
+
+.instalacion:hover,
+.grados:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.01);
 }
 
 #div1 {
@@ -97,28 +128,38 @@ body {
     font-size: 1.2rem;
 }
 
+.instlacion,
 .grados {
     background-color: rgb(230, 230, 230);
 }
 
-.grados>h3,
-.grados>p {
+.instalacion>h3 {
     margin: .2rem;
+    font-size: 1.7rem;
 }
 
+.instalacion>p 
+.grados>h3,
+.grados>p {
+  margin: .2rem;
+}
+
+
+
+.instalacion>a,
 .grados>a {
     margin: .2rem;
     font-size: 1rem;
-    color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: gray
 }
 
 p {
     font: 1rem 'PT Sans', sans-serif;
-    font-size: 1rem;
 }
 
 #col1, #col2, #col3 {
-    border-width: 0rem;
+    border-width: 0;
 }
 
 footer {
@@ -143,7 +184,7 @@ footer {
     top: 0;
     overflow: hidden;
     background-image: linear-gradient(rgb(230, 230, 230) 20%, rgba(230, 230, 230, 100));
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
     transition: 0.4s;
     z-index: 99;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
@@ -180,6 +221,7 @@ footer {
 
 #navbar-right {
     float: right;
+    margin-right: 2rem;
 }
 
 .duper, #myLinks, a.icon {
@@ -191,6 +233,7 @@ footer {
         font-size: 10px;
     }
 
+    .Instalaciones,
     .Titulaciones {
         margin-top: 2rem;
     }
@@ -208,21 +251,20 @@ footer {
     }
 
     #div1 {
-        width: 50%
+        width: 50%;
     }
 
-    
     .Inicio>h1 {
         font-size: 5rem;
     }
-    
+
     .Inicio>a {
         font-size: 1rem;
     }
 
     .Bienvenida {
         margin-top: 10rem;
-    } 
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -230,6 +272,7 @@ footer {
         font-size: 10px;
     }
 
+    .Instalaciones,
     .Titulaciones {
         margin-top: 1vw;
     }
@@ -251,21 +294,21 @@ footer {
     }
 
     #div1 {
-        width: 25%
+        width: 25%;
     }
 
     .Inicio>h1 {
         font-size: 6rem;
     }
-    
+
     .Inicio>a {
         font-size: 2rem;
     }
 
     .Bienvenida {
         margin-top: 10rem;
-    } 
-
+        height: 35vw;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -319,7 +362,8 @@ footer {
         position: absolute;
         right: 0rem;
         top: 0rem;
-        padding: 1.5rem 2.5rem;
+        padding: 1.2rem 2.5rem;
+        text-align: right;
     }
 
     .topnav a.left {
@@ -331,10 +375,13 @@ footer {
         margin-top: 1rem;
         margin-bottom: 1rem;
         color: #eee;
+        transition: .5s ease;
+
     }
 
     .topnav a:hover {
         color: rgb(9, 97, 175);
+
     }
 
     .topnav a.left:hover {
@@ -344,32 +391,31 @@ footer {
     .duper {
         background-color: rgb(230, 230, 230);
         color: rgb(12, 12, 12);
-        width: 8rem;
+        width: 11rem;
     }
 
     .navbar, #navbar-right, #logo, #navbar {
         visibility: hidden;
     }
 
+    .Instalaciones,
     .Titulaciones {
         margin-top: 1vw;
     }
 
     #div1 {
-        width: 100%
+        width: 100%;
     }
 
     .Inicio>h1 {
         font-size: 2.5rem;
     }
-    
+
     .Inicio>a {
         font-size: 0.6rem;
     }
 
     .Bienvenida {
         margin-top: 0rem;
-    } 
+    }
 }
-
-
