@@ -88,21 +88,25 @@ body, header {
 #instalacion1 {
     background:linear-gradient(rgba(70, 131, 180, 0), rgb(0, 3, 10)) ,url("https://www.uax.com/var/site/storage/images/6/2/8/1/61826-4-esl-ES/distribuidor-fablab.jpg");
     background-size: cover;
+    background-position: top;
 }
 
 #instalacion2 {
     background:linear-gradient(rgba(70, 131, 180, 0),rgb(0, 3, 10)) ,url("https://www.uax.com/var/site/storage/images/8/0/5/7/87508-1-esl-ES/distributiva-biolab.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 #instalacion3 {
     background:linear-gradient(rgba(70, 131, 180, 0), rgb(0, 3, 10)) ,url("https://www.uax.com/var/site/storage/images/1/2/7/8/18721-11-esl-ES/distribuidor-uax-fitness.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 #instalacion4 {
     background:linear-gradient(rgba(70, 131, 180, 0),rgb(0, 3, 10)) ,url("https://www.uax.com/var/site/storage/images/6/4/6/8/18646-6-esl-ES/distribuidor-hospital-virtual-simulacion.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 
