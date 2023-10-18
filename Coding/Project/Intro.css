@@ -35,9 +35,7 @@ body, header {
     width: 80%;
 }
 
-.Formulario,
-.Instalaciones,
-.Titulaciones {
+.Formulario, .Instalaciones, .Titulaciones {
     margin: 2vw 1rem;
     padding: 0.1rem;
     background-color: rgb(255, 255, 255);
@@ -47,9 +45,7 @@ body, header {
     flex-flow: row wrap;
 }
 
-.Formulario>h2,
-.Instalaciones>h2,
-.Titulaciones>h2 {
+.Formulario>h2, .Instalaciones>h2, .Titulaciones>h2 {
     margin: .5rem;
     padding: .6rem;
     font-size: 2rem;
@@ -190,15 +186,12 @@ body, header {
     width: 100%;
 }
 
-.equipo:hover,
-.instalacion:hover,
-.grados:hover {
+.equipo:hover, .instalacion:hover, .grados:hover {
     transition: all .3s ease-in-out;
     transform: scale(1.01);
 }
 
-#div2,
-#div1 {
+#div1, #div2, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19 {
     display: flex;
     margin-bottom: 1rem;
     flex-wrap: wrap;
@@ -214,13 +207,11 @@ body, header {
     font-size: 1.2rem;
 }
 
-.instlacion,
-.grados {
+.instlacion, .grados {
     background-color: rgb(255, 255, 255);
 }
 
-.grados>h3,
-.instalacion>h3 {
+.grados>h3, .instalacion>h3 {
     margin: 0.2rem;
     margin-bottom: 0rem;
     font-size: 1.5rem;
@@ -229,8 +220,7 @@ body, header {
     align-content: flex-end;
 }
 
-.instalacion>p 
-.grados>p {
+.instalacion>p  .grados>p {
   margin: .2rem;
   margin-top: 0rem;
   display: flex;
@@ -238,8 +228,7 @@ body, header {
   align-content: flex-end;
 }
 
-.instalacion>a,
-.grados>a {
+.instalacion>a, .grados>a {
     margin: .2rem;
     font-size: 1rem;
     text-decoration: none;
@@ -393,7 +382,7 @@ input::placeholder {
         margin: 1rem;
     }
 
-    #div1 {
+    #div1, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19 {
         width: 50%;
     }
 
@@ -440,7 +429,7 @@ input::placeholder {
         margin: 1rem;
     }
 
-    #div1 {
+    #div1, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19 {
         width: 25%;
     }
 
@@ -558,7 +547,7 @@ input::placeholder {
         margin-top: 1vw;
     }
 
-    #div1 {
+    #div1, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19 {
         width: 100%;
     }
 
