@@ -305,7 +305,7 @@ footer {
 }
 
 #Desktop_nav a:hover {
-    background-color: #ddd;
+    background-color: #ffffff;
     color: black;
     border-radius: 2rem;
 }
@@ -471,7 +471,7 @@ footer {
         background-color: rgb(207, 172, 12);
         margin-top: 1rem;
         margin-bottom: 1rem;
-        color: #eee;
+        color: #ffffff;
         transition: .5s ease;
     }
 
@@ -485,7 +485,7 @@ footer {
     }
 
     .duper {
-        background-color: rgb(230, 230, 230);
+        background-color: rgb(255, 255, 255);
         color: rgb(12, 12, 12);
         width: 11rem;
     }
