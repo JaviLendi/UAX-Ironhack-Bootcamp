@@ -22,6 +22,11 @@ body, header {
     color: #eee;
 }
 
+#sobrenosotros {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 3, 10, 0.747)) ,url("https://www.uax.com/var/site/storage/images/2/0/7/9/239702-1-esl-ES/640aa9c6cb82-HACKATHON2.png") no-repeat center;
+}
+
+
 .Inicio>h1 {
     font-size: 3rem;
     margin-left: 3vw;
@@ -81,7 +86,7 @@ body, header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
     align-items: flex-end;
     align-content: flex-end;
-    color: #ffffff;
+    color: #000000;
     height: 30rem;
 }
 
@@ -113,6 +118,84 @@ body, header {
     background-repeat: no-repeat;
 }
 
+.equipo {
+    margin: .5rem;
+    padding: .6rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
+    align-items: flex-end;
+    align-content: flex-end;
+    color: #ffffff;
+    height: 20rem;
+}
+
+#equipo1 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/3/3/2/8/148233-2-esl-ES/0b3e1988e296-maria-rubiato_.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#equipo2 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/7/3/7/5/85737-7-esl-ES/94e1a298883c-carla_padron_.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#equipo3 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/0/8/3/6/146380-3-esl-ES/1c1bf4eff9a5-juan-carlos-.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#equipo4 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/5/4/7/5/85745-11-esl-ES/75a7c2348f00-Ines_Ibarra_.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#equipo5 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/6/6/9/4/144966-2-esl-ES/df073899ff06-sofia-monteagudo.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#equipo6 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/2/6/6/2/152662-9-esl-ES/aeac979b5dea-joaquin-aynat.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#equipo7 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/0/7/9/4/144970-2-esl-ES/20fa708ec431-alejandro-bravo.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#equipo8 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/1/4/7/5/85741-5-esl-ES/b1810f9b2dd2-Claire_Dubois_.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
 .instalacion:hover,
 .grados:hover {
     transition: all .3s ease-in-out;
@@ -142,7 +225,7 @@ body, header {
 
 .grados>h3,
 .instalacion>h3 {
-    margin: .2rem;
+    margin: 0.2rem;
     margin-bottom: 0rem;
     font-size: 1.5rem;
     display: flex;
@@ -264,7 +347,7 @@ footer {
     }
 
     #div1 {
-        width: 50%;
+        width: 25%;
     }
 
     .Inicio>h1 {
@@ -417,7 +500,7 @@ footer {
     }
 
     #div1 {
-        width: 100%;
+        width: 50%;
     }
 
     .Inicio>h1 {
