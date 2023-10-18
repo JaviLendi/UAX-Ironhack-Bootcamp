@@ -367,6 +367,12 @@ input[type=submit]:hover {
     background-color: rgb(182, 150, 8);
   }
 
+input::placeholder {
+    color: rgb(214, 166, 7);
+    font-size: 1em;
+    font-style: italic;
+}
+
 #div3{
     width: 100%;
 }
