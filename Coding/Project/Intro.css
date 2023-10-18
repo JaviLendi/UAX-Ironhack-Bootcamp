@@ -2,13 +2,8 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 13px;
-}
-
 body, header {
     background-color: rgb(255, 255, 255);
-    margin: 0;
 }
 
 .Bienvenida {
@@ -280,7 +275,6 @@ footer {
     top: 0;
     overflow: hidden;
     background-image: linear-gradient(rgb(255, 255, 255) 20%, rgba(255, 2255, 255, 100));
-    padding: 3rem 2rem;
     transition: 0.4s;
     z-index: 99;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
