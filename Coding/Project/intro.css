@@ -4,6 +4,7 @@
 
 body, header {
     background-color: rgb(255, 255, 255);
+    margin: 0rem;
 }
 
 .Bienvenida {
@@ -197,6 +198,10 @@ body, header {
     flex-wrap: wrap;
 }
 
+#div3{
+    width: 100%;
+}
+
 .title {
     font-size: 10rem;
     text-align: center;
@@ -261,7 +266,8 @@ footer {
     align-items: center;
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 0rem;
+    left: 0rem;
     overflow: hidden;
     background-image: linear-gradient(rgb(255, 255, 255) 20%, rgba(255, 2255, 255, 100));
     transition: 0.4s;
@@ -302,10 +308,6 @@ footer {
 #Desktop_nav-right {
     float: right;
     margin-right: 2rem;
-}
-
-.duper, #myLinks, a.icon {
-    width: 0;
 }
 
 .form {
@@ -356,8 +358,8 @@ input::placeholder {
     font-style: italic;
 }
 
-#div3{
-    width: 100%;
+#logo_mobile, .mobile-container, .mobile_nav {
+    width: 0;
 }
 
 @media screen and (min-width: 580px) {
@@ -365,14 +367,13 @@ input::placeholder {
         font-size: 10px;
     }
 
-    .Instalaciones,
-    .Titulaciones {
+    .Instalaciones, .Titulaciones {
         margin-top: 1rem;
     }
 
-    .Mobile_nav {
+    .mobile_nav {
         visibility: hidden;
-        margin-top: -2rem;
+        margin-top: -9rem;
     }
 
     #Desktop_nav #logo {
@@ -408,14 +409,13 @@ input::placeholder {
         font-size: 10px;
     }
 
-    .Instalaciones,
-    .Titulaciones {
+    .Instalaciones, .Titulaciones {
         margin-top: 1vw;
     }
 
-    .Mobile_nav {
-        visibility: hidden;
-        margin-top: -2rem;
+    .mobile_nav, .mobile-container {
+        visibility: collapse;
+        margin-top: -10rem;
     }
 
     #Desktop_nav a {
@@ -461,89 +461,131 @@ input::placeholder {
     }
 
     .mobile-container {
-        display: flex;
-        align-items: flex-start;
-        max-width: 1rem;
         background-color: rgb(255, 255, 255);
         height: 0rem;
-        color: white;
     }
 
-    .Mobile_nav {
+    .mobile_nav {
         overflow: hidden;
         position: fixed;
         top: 0rem;
+        left: 0rem;
         background-color: rgb(255, 255, 255);
         width: 100%;
         z-index: 99;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
     }
 
-    .Mobile_nav #myLinks {
-        display: none;
-        align-items: center;
-        align-content: flex-end;
-        flex-wrap: wrap;
-        margin-bottom: 2rem;
-    }
-
-    .Mobile_nav a {
-        display: flex;
-        flex-wrap: nowrap;
-        color: rgb(8, 8, 8);
-        background-color: #dddddd00;
-        padding: 1rem 1rem;
-        text-decoration: none;
-        font-size: 16px;
+    .mobile_nav a{
         display: block;
         font-family: 'PT Sans', sans-serif;
         border-radius: 4rem;
-        padding-left: 2.5rem;
+        text-decoration: none;
+    }
+
+    #logo_mobile{
+        display: fixed;
+        top: 0;
+        right: 0;
+        width: 11rem;
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: center;
         width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: white;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .5s ease-out;
     }
 
-    .Mobile_nav a.icon {
-        background: rgba(230, 230, 230, 0);
-        display: block;
-        position: absolute;
-        right: 0rem;
-        top: 0rem;
-        padding: 1.5rem 2.5rem;
-        text-align: right;
-    }
-
-    .Mobile_nav a.left {
-        text-wrap: nowrap;
-        padding-right: 60vw;
-        margin-left: 15vw;
-        background-color: rgb(207, 172, 12);
+    .menu a{
+        padding: 2vw 40vw;
+        text-align: center;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        color: #ffffff;
-        transition: .5s ease;
+        margin-right: 4rem;
+        color: rgb(255, 255, 255);
+        background-color: rgb(207, 172, 12);
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1.5rem;
     }
 
-    .Mobile_nav a:hover {
-        color: rgb(0, 0, 0);
-
-    }
-
-    .Mobile_nav a.left:hover {
+    .menu a:hover{
         background-color: rgb(183, 183, 183);
     }
 
-    .duper {
-        background-color: rgb(255, 255, 255);
-        color: rgb(12, 12, 12);
-        width: 11rem;
+    .menu a.active{
+        background-color: rgb(2, 1, 0);
+    }
+
+    /* Menu Icon */
+    .hamb{
+        cursor: pointer;
+        float: right;
+        padding: 3rem 2rem;
+    }/* Style label tag */
+
+    .hamb-line {
+        background: white;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+
+    } /* Style span tag */
+
+    .hamb-line::before,
+    .hamb-line::after{
+        background: black;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    .hamb-line::before{
+        top: 5px;
+    }
+    .hamb-line::after{
+        top: -5px;
+    }
+
+    .side-menu {
+        display: none;
+    } /* Hide checkbox */
+
+    /* Toggle menu icon */
+    .side-menu:checked ~ nav{
+        max-height: 100%;
+    }
+    .side-menu:checked ~ .hamb .hamb-line {
+        background: transparent;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top:0;
     }
 
     .Desktop_nav, #Desktop_nav-right, #logo, #Desktop_nav {
         visibility: hidden;
     }
 
-    .Instalaciones,
-    .Titulaciones {
+    .Instalaciones, .Titulaciones {
         margin-top: 1vw;
     }
 
