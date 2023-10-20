@@ -7,6 +7,7 @@ body, header {
     margin: 0rem;
 }
 
+/* Sección de bienvenida */
 .Bienvenida {
     display: flex;
     align-items: center;
@@ -18,17 +19,18 @@ body, header {
     color: #eee;
 }
 
+/* Sección de bienvenida de la página sobre nosotros*/
 #sobrenosotros {
     background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 3, 10, 0.747)) ,url("https://www.uax.com/var/site/storage/images/2/0/7/9/239702-1-esl-ES/640aa9c6cb82-HACKATHON2.png") no-repeat center;
     background-size: cover;
 }
 
+/* Dar estilo a la sección de bienvenida*/
 .Inicio>h1 {
     font-size: 3rem;
     margin-left: 3vw;
     margin-bottom: -0.1rem;
 }
-
 .Inicio>a {
     display: flex;
     margin-left: 3.5vw;
@@ -36,6 +38,7 @@ body, header {
     width: 80%;
 }
 
+/* Estilo para los cuadrados en donde va el distinto contenido de la página */
 .Formulario, .Instalaciones, .Titulaciones {
     margin: 2vw 1rem;
     padding: 0.1rem;
@@ -45,7 +48,6 @@ body, header {
     text-align: left;
     flex-flow: row wrap;
 }
-
 .Formulario>h2, .Instalaciones>h2, .Titulaciones>h2 {
     margin: .5rem;
     padding: .6rem;
@@ -55,7 +57,6 @@ body, header {
     color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
 }
-
 .grados {
     margin: .5rem;
     padding: .6rem;
@@ -66,7 +67,6 @@ body, header {
     flex-wrap: wrap;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
 }
-
 .instalacion {
     margin: .5rem;
     padding: .6rem;
@@ -80,35 +80,6 @@ body, header {
     color: #ffffff;
     height: 30rem;
 }
-
-#instalacion1 {
-    background:linear-gradient(rgba(70, 131, 180, 0), rgb(0, 3, 10)) ,url("https://www.uax.com/var/site/storage/images/6/2/8/1/61826-4-esl-ES/distribuidor-fablab.jpg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-}
-
-#instalacion2 {
-    background:linear-gradient(rgba(70, 131, 180, 0),rgb(0, 3, 10)) ,url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F09%2Feb%2Fcc%2F09ebcc355a67ec564980e759788c8ac2.png&f=1&nofb=1&ipt=27e094cb3b840bc756b10acc1e88e9008a2988a13707a13eebf41714bd072d2d&ipo=images");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#instalacion3 {
-    background:linear-gradient(rgba(70, 131, 180, 0), rgb(0, 3, 10)) ,url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.udem.edu.mx%2Fsites%2Fdefault%2Ffiles%2F2018-11%2F2018-ingenieria-y-tecnologias-taller-de-ingenieria-carrusel-2.jpg&f=1&nofb=1&ipt=275e788f26d47ef3d56a49877af4d64324b94c3ffda317e10b2deaa67e9ac99b&ipo=images");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#instalacion4 {
-    background:linear-gradient(rgba(70, 131, 180, 0),rgb(0, 3, 10)) ,url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fbc%2Fbe%2Fbb%2Fbcbebbf994c977b3aa84a8efa12c381f.jpg&f=1&nofb=1&ipt=5659628d039c253708ca0bc4e20517be46454096a18b2b3d5786a1217ded3053&ipo=images");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .equipo {
     margin: .5rem;
     padding: .6rem;
@@ -123,6 +94,34 @@ body, header {
     height: 20rem;
 }
 
+
+/* Imágenes de las distintas instalaciones */
+#instalacion1 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgb(0, 3, 10)) ,url("https://www.uax.com/var/site/storage/images/6/2/8/1/61826-4-esl-ES/distribuidor-fablab.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+#instalacion2 {
+    background:linear-gradient(rgba(70, 131, 180, 0),rgb(0, 3, 10)) ,url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F09%2Feb%2Fcc%2F09ebcc355a67ec564980e759788c8ac2.png&f=1&nofb=1&ipt=27e094cb3b840bc756b10acc1e88e9008a2988a13707a13eebf41714bd072d2d&ipo=images");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#instalacion3 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgb(0, 3, 10)) ,url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.udem.edu.mx%2Fsites%2Fdefault%2Ffiles%2F2018-11%2F2018-ingenieria-y-tecnologias-taller-de-ingenieria-carrusel-2.jpg&f=1&nofb=1&ipt=275e788f26d47ef3d56a49877af4d64324b94c3ffda317e10b2deaa67e9ac99b&ipo=images");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#instalacion4 {
+    background:linear-gradient(rgba(70, 131, 180, 0),rgb(0, 3, 10)) ,url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fbc%2Fbe%2Fbb%2Fbcbebbf994c977b3aa84a8efa12c381f.jpg&f=1&nofb=1&ipt=5659628d039c253708ca0bc4e20517be46454096a18b2b3d5786a1217ded3053&ipo=images");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Imágenes de los distintos equipos */
 #equipo1 {
     background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/3/3/2/8/148233-2-esl-ES/0b3e1988e296-maria-rubiato_.jpg");
     background-size: cover;
@@ -130,7 +129,6 @@ body, header {
     background-repeat: no-repeat;
     width: 100%;
 }
-
 #equipo2 {
     background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/7/3/7/5/85737-7-esl-ES/94e1a298883c-carla_padron_.jpg");
     background-size: cover;
@@ -138,7 +136,6 @@ body, header {
     background-repeat: no-repeat;
     width: 100%;
 }
-
 #equipo3 {
     background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/0/8/3/6/146380-3-esl-ES/1c1bf4eff9a5-juan-carlos-.jpg");
     background-size: cover;
@@ -146,7 +143,6 @@ body, header {
     background-repeat: no-repeat;
     width: 100%;
 }
-
 #equipo4 {
     background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/5/4/7/5/85745-11-esl-ES/75a7c2348f00-Ines_Ibarra_.jpg");
     background-size: cover;
@@ -154,7 +150,6 @@ body, header {
     background-repeat: no-repeat;
     width: 100%;
 }
-
 #equipo5 {
     background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/6/6/9/4/144966-2-esl-ES/df073899ff06-sofia-monteagudo.jpg");
     background-size: cover;
@@ -162,7 +157,6 @@ body, header {
     background-repeat: no-repeat;
     width: 100%;
 }
-
 #equipo6 {
     background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/2/6/6/2/152662-9-esl-ES/aeac979b5dea-joaquin-aynat.jpg");
     background-size: cover;
@@ -170,7 +164,6 @@ body, header {
     background-repeat: no-repeat;
     width: 100%;
 }
-
 #equipo7 {
     background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/0/7/9/4/144970-2-esl-ES/20fa708ec431-alejandro-bravo.jpg");
     background-size: cover;
@@ -178,7 +171,6 @@ body, header {
     background-repeat: no-repeat;
     width: 100%;
 }
-
 #equipo8 {
     background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("https://www.uax.com/var/site/storage/images/1/4/7/5/85741-5-esl-ES/b1810f9b2dd2-Claire_Dubois_.jpg");
     background-size: cover;
@@ -187,35 +179,35 @@ body, header {
     width: 100%;
 }
 
+/* Animación cuando pasa el cursor por encima */
 .equipo:hover, .instalacion:hover, .grados:hover {
     transition: all .3s ease-in-out;
     transform: scale(1.01);
 }
 
+/* Estilo para los distintos divs */
 #div1, #div2, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19 {
     display: flex;
     margin-bottom: 1rem;
     flex-wrap: wrap;
 }
-
 #div3{
     width: 100%;
 }
 
+/* Estilo para el título */
 .title {
     font-size: 10rem;
     text-align: center;
     width: 100%;
 }
 
+/* Estilo para el subtítulo */
 .subtitle {
     font-size: 1.2rem;
 }
 
-.instlacion, .grados {
-    background-color: rgb(255, 255, 255);
-}
-
+/* Estilo para el título de cada cuadro*/
 .grados>h3, .instalacion>h3 {
     margin: 0.2rem;
     margin-bottom: 0rem;
@@ -225,6 +217,7 @@ body, header {
     align-content: flex-end;
 }
 
+/* Estilo para el texto */
 .instalacion>p  .grados>p {
   margin: .2rem;
   margin-top: 0rem;
@@ -232,20 +225,14 @@ body, header {
   align-items: flex-end;
   align-content: flex-end;
 }
-
 .instalacion>a, .grados>a {
     margin: .2rem;
     font-size: 1rem;
     text-decoration: none;
     color: gray
 }
-
 p {
     font: 1rem 'PT Sans', sans-serif;
-}
-
-#col1, #col2, #col3 {
-    border-width: 0;
 }
 
 footer {
@@ -259,6 +246,7 @@ footer {
     margin-bottom: 0.4rem;
 }
 
+/* Navegación para escritorio y tablets */
 #Desktop_nav {
     display: flex;
     justify-content: space-between;
@@ -266,6 +254,7 @@ footer {
     align-items: center;
     position: fixed;
     width: 100%;
+    padding: 3rem 2rem;
     top: 0rem;
     left: 0rem;
     overflow: hidden;
@@ -274,7 +263,6 @@ footer {
     z-index: 99;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
 }
-
 #Desktop_nav a {
     float: left;
     color: black;
@@ -286,30 +274,27 @@ footer {
     font-family: 'PT Sans', sans-serif;
     border-radius: 2rem;
 }
-
 #Desktop_nav #logo {
     margin-left: 2%;
     margin-bottom: 0%;
     transition: 0.4s;
     max-width: 25%;
 }
-
 #Desktop_nav a:hover {
     background-color: #ffffff;
     color: black;
     border-radius: 2rem;
 }
-
 #Desktop_nav a.active {
     background-color: rgb(207, 172, 12);
     color: white;
 }
-
 #Desktop_nav-right {
     float: right;
     margin-right: 2rem;
 }
 
+/* Forumulario de inscripción */
 .form {
     margin: .5rem;
     padding: .6rem;
@@ -318,7 +303,6 @@ footer {
     color: #000000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
 }
-
 input[type="text"], input[type="email"], input, select, textarea {
     width: 100%;
     padding: 1rem;
@@ -329,12 +313,10 @@ input[type="text"], input[type="email"], input, select, textarea {
     margin-bottom: 1.4rem;
     resize: vertical;
 }
-
 label {
     padding: 0.6rem 0.1rem 0.1rem 0;
     display: inline-block;
   }
-
 input[type="submit"] {
     width: 30%;
     background-color: rgb(207, 172, 12);
@@ -347,124 +329,106 @@ input[type="submit"] {
     margin-top: 0.5rem; 
     transition: .3s ease-in-out;
 }
-
 input[type=submit]:hover {
     background-color: rgb(182, 150, 8);
   }
-
 input::placeholder {
     color: rgb(214, 166, 7);
     font-size: 1em;
     font-style: italic;
 }
 
+/* Eliminar la barra de navegación para móvil */
 #logo_mobile, .mobile-container, .mobile_nav {
     width: 0;
 }
 
+/* Estilo para tablets */
 @media screen and (min-width: 580px) {
     html {
         font-size: 10px;
     }
-
     .Instalaciones, .Titulaciones {
         margin-top: 1rem;
     }
-
     .mobile_nav {
-        visibility: hidden;
+        visibility: collapse;
         margin-top: -9rem;
     }
-
     #Desktop_nav #logo {
         display: flex;
         flex-shrink: 2;
         width: 16rem;
         margin: 1rem;
     }
-
     #div1, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19 {
         width: 50%;
     }
-
     #div2 {
         width: 25%;
     }
-
     .Inicio>h1 {
         font-size: 5rem;
     }
-
     .Inicio>a {
         font-size: 1rem;
     }
-
     .Bienvenida {
         margin-top: 9rem;
     }
 }
 
+/* Estilo para ordenador */
 @media screen and (min-width: 1024px) {
     html {
         font-size: 10px;
     }
-
     .Instalaciones, .Titulaciones {
         margin-top: 1vw;
     }
-
     .mobile_nav, .mobile-container {
         visibility: collapse;
         margin-top: -10rem;
     }
-
     #Desktop_nav a {
         font-size: 1.5rem;
     }
-
     #Desktop_nav #logo {
         display: flex;
         flex-shrink: 2;
         width: 16rem;
         margin: 1rem;
     }
-
     #div1, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19 {
         width: 25%;
     }
-
     #div2 {
         width: 12.5%;
     }
-
     .Inicio>h1 {
         font-size: 6rem;
     }
-
     .Inicio>a {
         font-size: 1.2rem;
     }
-
     .Bienvenida {
         margin-top: 10rem;
         height: 35vw;
     }
-
     .equipo {
         height: 30rem;
     }
 }
 
+/* Estilo para móviles */
 @media screen and (max-width: 580px) {
     html {
         font-size: 10px;
     }
-
     .mobile-container {
         background-color: rgb(255, 255, 255);
         height: 0rem;
     }
-
     .mobile_nav {
         overflow: hidden;
         position: fixed;
@@ -475,14 +439,12 @@ input::placeholder {
         z-index: 99;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
     }
-
     .mobile_nav a{
         display: block;
         font-family: 'PT Sans', sans-serif;
         border-radius: 4rem;
         text-decoration: none;
     }
-
     #logo_mobile{
         display: fixed;
         top: 0;
@@ -491,11 +453,9 @@ input::placeholder {
         margin-left: 1rem;
         margin-top: 1.5rem;
     }
-
     ul{
         list-style: none;
     }
-
     .nav{
         display: flex;
         justify-content: center;
@@ -507,7 +467,6 @@ input::placeholder {
         max-height: 0;
         transition: max-height .5s ease-out;
     }
-
     .menu a{
         padding: 2vw 40vw;
         text-align: center;
@@ -519,33 +478,27 @@ input::placeholder {
         font-family: 'PT Sans', sans-serif;
         font-size: 1.5rem;
     }
-
     .menu a:hover{
         background-color: rgb(183, 183, 183);
     }
-
     .menu a.active{
         background-color: rgb(2, 1, 0);
     }
 
-    /* Menu Icon */
+    /* Icono del menú */
     .hamb{
         cursor: pointer;
         float: right;
         padding: 3rem 2rem;
-    }/* Style label tag */
-
+    }
     .hamb-line {
         background: white;
         display: block;
         height: 2px;
         position: relative;
         width: 24px;
-
-    } /* Style span tag */
-
-    .hamb-line::before,
-    .hamb-line::after{
+    } 
+    .hamb-line::before, .hamb-line::after{
         background: black;
         content: '';
         display: block;
@@ -560,12 +513,11 @@ input::placeholder {
     .hamb-line::after{
         top: -5px;
     }
-
     .side-menu {
         display: none;
-    } /* Hide checkbox */
+    } /* Elimina el cuadro*/
 
-    /* Toggle menu icon */
+    /* Animar y cambiar el icono al hacer click */
     .side-menu:checked ~ nav{
         max-height: 100%;
     }
@@ -580,31 +532,24 @@ input::placeholder {
         transform: rotate(45deg);
         top:0;
     }
-
     .Desktop_nav, #Desktop_nav-right, #logo, #Desktop_nav {
         visibility: hidden;
-    }
-
+    } /* Ocultar la navegación de ordenador */
     .Instalaciones, .Titulaciones {
         margin-top: 1vw;
     }
-
     #div1, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19 {
         width: 100%;
     }
-
     #div2 {
         width: 50%;
     }
-
     .Inicio>h1 {
         font-size: 3.5rem;
     }
-
     .Inicio>a {
         font-size: 1rem;
     }
-
     .Bienvenida {
         margin-top: 0rem;
     }
