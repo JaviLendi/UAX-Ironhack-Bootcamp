@@ -351,32 +351,32 @@ input::placeholder {
     width: 100%;
     font-family: 'PT Sans', sans-serif;
     color: #1a1515;
-    font-size: 3rem;
 }
 .gracias h1 {
     margin-bottom: 0rem;
+    font-size: 5rem;
 }
 .gracias a{
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .gracias div{
     width: 100%;
 }
 #gracias {
-    width: 100%;
     background-color: rgb(207, 172, 12);
     color: #fff;
-    padding: 1rem 1rem;
+    padding: 1.5rem 4rem;
     border: none;
-    border-radius: 1.2rem;
-    cursor: pointer;
-    font-size: 1.2em;
+    border-radius: 3rem;
+    font-size: 1.5em;
     text-decoration: none;
     transition: .3s ease-in-out;
-    margin-top: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 2rem;
+    text-align: center;
+}
+#button {
+    margin-top: 4rem;
 }
 #gracias:hover {
     background-color: rgb(182, 150, 8);
