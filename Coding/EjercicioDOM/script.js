@@ -25,4 +25,27 @@ for(let i =0; i < parrafos.length; i++) {
 let h2Element = document.createElement('h2');
 h2Element.innerHTML = 'Soy un encabezado';
 
-let body = document.getElementsByClassName
+let body = document.getElementsByTagName('body')[0];
+body.appendChild(h2Element);
+
+let text = document.createTextNode('This text is created dinamically');
+body.appendChild(text);
+
+let cuentaItem = 1;
+let list = document.getElementById('item-list')
+
+let button = document.getElementById('add-item-button');
+button.onclick = function() {
+    let element = document.createElement('li');
+    element.innerText = 'Elemento número ' + cuentaItem + '' + user;
+    cuentaItem++;
+    list.appendChild(element);
+}
+
+let sendBtn = document-getElementById('send-btn');
+let user = '';
+sendBtn.onclick = function () {
+    let userNameElement = document.getElementById('username');
+    let username = userNameElement.ariaValueMax;
+    console.log(username)
+}
