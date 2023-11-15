@@ -35,10 +35,10 @@ function counter() {
 // Iteration 4: Complete the function
 function checkGuess() {
     if (sentInput < secretNumber) {
-        alert(`Muy alto, prueba un valor más alto. Número de intentos: ${tryCounter}`);
+        alert(`Muy bajo, prueba un valor más alto. Número de intentos: ${tryCounter}`);
         console.log(`Muy alto, prueba un valor más alto. Número de intentos: ${tryCounter}`);
     } else if (sentInput > secretNumber) {
-        alert(`Muy bajo, prueba un valor más bajo. Número de intentos: ${tryCounter}`);
+        alert(`Muy alto, prueba un valor más bajo. Número de intentos: ${tryCounter}`);
         console.log(`Muy bajo, prueba un valor más bajo. Número de intentos: ${tryCounter}`);
     } else {
         alert(`¡Ganaste! El número secreto era ${secretNumber}, Número de intentos: ${tryCounter}`);
