@@ -1,11 +1,14 @@
 // Secret number: what the user will have to guess
 const secretNumber = 55;
 
-// Function
-function checkGuess(e) {
-    e.preventDefault();
-    console.log('I am working')
-}
+const ulElement = document.createElement('ul');
+ulElement.id = 'list';
+
+// Insertar el elemento ul en el cuerpo del documento
+document.body.appendChild(ulElement);
+
+// Limpiar la lista de feedback al ingresar un nuevo número
+list.innerHTML = '';
 
 // Iteration 1: Select the input
 document.getElementById('guess-input').addEventListener('input', function() {
@@ -34,12 +37,16 @@ function counter() {
 
 // Iteration 4: Complete the function
 function checkGuess() {
+    const tryelement = document.createElement('li');
+    tryelement.textContent = `Try number ${tryCounter}: ${sentInput}`;
     if (sentInput < secretNumber) {
         alert(`Muy bajo, prueba un valor más alto. Número de intentos: ${tryCounter}`);
         console.log(`Muy alto, prueba un valor más alto. Número de intentos: ${tryCounter}`);
+        list.appendChild(tryelement);
     } else if (sentInput > secretNumber) {
         alert(`Muy alto, prueba un valor más bajo. Número de intentos: ${tryCounter}`);
         console.log(`Muy bajo, prueba un valor más bajo. Número de intentos: ${tryCounter}`);
+        list.appendChild(tryelement);
     } else {
         alert(`¡Ganaste! El número secreto era ${secretNumber}, Número de intentos: ${tryCounter}`);
         console.log(`¡Ganaste! El número secreto era ${secretNumber}, Número de intentos: ${tryCounter}`);
@@ -53,4 +60,8 @@ function resetGame() {
     const secretNumber = Math.floor(Math.random() * 100) + 1;
     console.log(secretNumber)
     tryCounter = 0;
+    
 }
+
+// Iteration 5: Make the tries show on the page
+
