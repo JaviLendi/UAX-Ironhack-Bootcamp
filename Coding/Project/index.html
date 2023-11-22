@@ -133,7 +133,7 @@
 
     <div id="idcontraseña" class="login">
   
-        <form class="login-content animate">
+        <form class="login-content animate" method="post">
       
           <div class="container">      
             <a>Introduce la contraseña</a>
@@ -181,7 +181,7 @@
         var password = "1234";
         var contraseña = document.getElementById("pswd").value;
         if (password == contraseña) {
-             location.href = "miembros.html";
+             window.location.href = 'miembros.html';
         }
         else{
             alert("Contraseña incorrecta");
