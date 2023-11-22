@@ -137,7 +137,7 @@
       
           <div class="container">      
             <a>Introduce la contraseña</a>
-            <input type="password" placeholder="contraseña" name="contraseña" id="pswd" required>
+            <input type="password" placeholder="contraseña" id="pswd" required>
               
             <button type="submit" onclick="comprobarcontraseña()">Enviar</button>
           </div>
@@ -181,8 +181,9 @@
         var password = "1234";
         var contrasena = document.getElementById("pswd").value;
         if (contrasena == password) {
+            alert('hola'); 
             location.href('https://javilendi.github.io/Coding/Project/miembros.html');
-            console.log(hola); 
+            
         }
         else{
             alert("Contraseña incorrecta");
