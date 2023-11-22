@@ -133,13 +133,14 @@
 
     <div id="idcontraseña" class="login">
   
-        <form class="login-content animate">
+        <form onsubmit="comprobarcontraseña(event)" class="login-content animate">
       
           <div class="container">      
             <a>Introduce la contraseña</a>
             <input type="password" placeholder="contraseña" id="pswd" required>
+            <p id="message"></p>
               
-            <button type="submit" onclick="comprobarcontraseña()">Enviar</button>
+            <button type="submit">Enviar</button>
           </div>
       
           <div class="container" style="background-color:#f1f1f1">
@@ -168,25 +169,28 @@
     }
 </script>
 <script>
-    var modal = document.getElementById('idcontraseña');
+    var login = document.getElementById('idcontraseña');
     
     window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+        if (event.target == login) {
+            login.style.display = "none";
         }
     }
 </script>
 <script>
     function comprobarcontraseña() {
+        event.preventDefault(); 
         var password = "1234";
         var contrasena = document.getElementById("pswd").value;
         if (contrasena == password) {
-            alert('hola'); 
-            location.href('https://javilendi.github.io/Coding/Project/miembros.html');
-            
+            location.assign("https://javilendi.github.io/Coding/Project/miembros.html")
         }
         else{
-            alert("Contraseña incorrecta");
+            let text = document.createTextNode('Contraseña incorrecta');
+            let p = document.getElementById('message');
+            p.innerHTML = '';
+            p.appendChild(text);
+            p.style.display = "block";
         }
     }
 </script>

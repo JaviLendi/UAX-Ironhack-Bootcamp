@@ -410,23 +410,34 @@ input::placeholder {
     transition: .9s ease-in-out;
   }
   
-  /* Acceso a pagina privada */
-  .login-content {
+/* Acceso a pagina privada */
+.login-content {
     background-color: #fefefe;
     margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     width: 60%; /* Could be more or less, depending on screen size */
     border-radius: 2.5rem;
     transition: .9s ease-in-out;
 
-  }
+}
 
-  .container a {
+.container a {
     margin-bottom: 1rem;
     margin-top: 2.5rem;
     font: 1.5rem 'PT Sans', sans-serif;
 }
 
-  .close {
+.container p {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font: 1.5rem 'PT Sans', sans-serif;
+    background-color: #f4433636;
+    color: #f44336;
+    display: none;
+}
+
+.close {
     position: absolute;
     right: 25px;
     top: 0;
@@ -434,13 +445,13 @@ input::placeholder {
     font-size: 35px;
     font-weight: bold;
     border-radius: 3em;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: red;
     cursor: pointer;
-  }
+}
 
 button {
     background-color: #04AA6D;
