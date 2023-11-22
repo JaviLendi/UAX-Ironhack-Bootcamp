@@ -180,9 +180,9 @@
     function comprobarcontraseña() {
         var password = "1234";
         var contraseña = document.getElementById("pswd").value;
-        if (password == contraseña) {
-            var url = 'miembros.html';
-            document.location.href = url;
+        if (contraseña == password) {
+            location.href('https://javilendi.github.io/Coding/Project/miembros.html');
+            console.log(hola); 
         }
         else{
             alert("Contraseña incorrecta");
