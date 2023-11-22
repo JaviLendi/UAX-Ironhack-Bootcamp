@@ -137,7 +137,7 @@
       
           <div class="container">      
             <a>Introduce la contraseña</a>
-            <input type="password" placeholder="Contraseña" name="contraseña" id="pswd" required>
+            <input type="password" placeholder="contraseña" name="contraseña" id="pswd" required>
               
             <button type="submit" onclick="comprobarcontraseña()">Enviar</button>
           </div>
@@ -178,10 +178,10 @@
 </script>
 <script>
     function comprobarcontraseña() {
-        var contraseña = "1234";
-        var password = document.getElementById("pswd").value;
+        var password = "1234";
+        var contraseña = document.getElementById("pswd").value;
         if (password == contraseña) {
-             window.location.href = "/miembros.html";
+             location.href = "miembros.html";
         }
         else{
             alert("Contraseña incorrecta");
