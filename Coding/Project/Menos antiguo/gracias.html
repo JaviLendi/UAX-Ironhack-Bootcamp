@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>UAX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="ES">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="intro.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navegación para movil  -->
+        <div class="mobile_nav">
+            <div class="mobile-container"></div>
+            <img src="https://www.cogitim.es/uploads/documentos/Repositorios/Documentos/Imagenes/Madrid%20Motor%20Student/UAX/UAX_logo.jpg" id="logo_mobile" alt="logo">
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <!-- Menu -->
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre_nosotros.html">Sobre nosotros</a> </li>
+                    <li><a class="active" href="inscripcion.html">Inscripción</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Navegación para ordenador -->
+        <div id="Desktop_nav">
+            <img src="https://www.cogitim.es/uploads/documentos/Repositorios/Documentos/Imagenes/Madrid%20Motor%20Student/UAX/UAX_logo.jpg" id="logo"></a>
+            <div id="navbar-right">
+                <a href="index.html"><i class="fa fa-home fa-3x"></i></a>
+                <a href="sobre_nosotros.html">Sobre nosotros</a>
+                <a class="active" href="inscripcion.html">Inscripción</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="gracias">
+        <div>
+            <h1>Gracias!!</h1>
+            <a>Te avisaremos por correo de los siguientes pasos a realizar</a>
+            <div id="button">
+            <a href="index.html" id="gracias">Inicio</a>
+            </div>
+        </div>
+    </section>
+
+<script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+            document.getElementById("Desktop_nav").style.padding = "0.4rem 1rem";
+            document.getElementById("logo").style.fontSize = "2rem";
+        } else {
+            document.getElementById("Desktop_nav").style.padding = "3rem 2rem";
+            document.getElementById("logo").style.fontSize = "2rem";
+        }
+    }
+</script>
+</html>

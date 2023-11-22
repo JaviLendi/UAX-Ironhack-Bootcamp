@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>UAX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="ES">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="intro.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navegación para movil  -->
+        <div class="mobile_nav">
+            <div class="mobile-container"></div>
+            <img src="https://www.cogitim.es/uploads/documentos/Repositorios/Documentos/Imagenes/Madrid%20Motor%20Student/UAX/UAX_logo.jpg" id="logo_mobile" alt="logo">
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <!-- Menu -->
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre_nosotros.html">Sobre nosotros</a> </li>
+                    <li><a class="active" href="inscripcion.html">Inscripción</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Navegación para ordenador -->
+        <div id="Desktop_nav">
+            <img src="https://www.cogitim.es/uploads/documentos/Repositorios/Documentos/Imagenes/Madrid%20Motor%20Student/UAX/UAX_logo.jpg" id="logo"></a>
+            <div id="navbar-right">
+                <a href="index.html"><i class="fa fa-home fa-1x"></i></a>
+                <a href="sobre_nosotros.html">Sobre nosotros</a>
+                <a class="active" href="inscripcion.html">Inscripción</a>
+            </div>
+        </div>
+    </header>
+
+    <section  id="inscripcion" class="Bienvenida">
+        <div class="Inicio">
+            <h1>Inscripción</h1>
+            <a>Cualquiera puede formar parte de uno de nuestros equipos, no esperes más y apúntate!!</a>
+        </div>
+    </section>
+
+    <section class="Formulario">
+        <h2 class="title">Formulario</h2>
+        <div id="div3">
+            <article class="form">
+                <form action="gracias.html" method="GET"> <!-- POST no lo soporta github -->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre.." required>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos.." required>
+                    <label type="number" for="NP">NP:</label>
+                    <input type="text" id="NP" name="NP"placeholder="Tu NP de la UAX.." required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico de la UAX.." required>
+                    <label for="Equipo">Equipo al que te gustaria unirte:</label>
+                    <select id="equipo" name="equipo" required>
+                        <option placeholder="Moto student">...</option>
+                        <option value="Moto student">Moto student</option>
+                        <option value="Formula student">Formula student</option>
+                        <option value="Cubesat">Cubesat</option>
+                        <option value="Simulación">Simulación</option>
+                        <option value="Diseño">Diseño</option>
+                    </select>
+                    <input type="submit" value="Enviar">
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <p class="footer">© 2023 Hecho en Ironhack!</p>
+    </footer>
+</body>
+
+<script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+            document.getElementById("Desktop_nav").style.padding = "0.4rem 1rem";
+            document.getElementById("logo").style.fontSize = "2rem";
+        } else {
+            document.getElementById("Desktop_nav").style.padding = "3rem 2rem";
+            document.getElementById("logo").style.fontSize = "2rem";
+        }
+    }
+</script>
+
+</html>

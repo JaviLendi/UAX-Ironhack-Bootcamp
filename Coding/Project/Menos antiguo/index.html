@@ -23,7 +23,6 @@
                     <li><a class="active" href="index.html">Inicio</a></li>
                     <li><a href="sobre_nosotros.html">Sobre nosotros</a> </li>
                     <li><a href="inscripcion.html">Inscripción</a></li>
-                    <li><a onclick="document.getElementById('idcontraseña').style.display='block'">Miembros</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,7 +34,6 @@
                 <a class="active" href="index.html"><i class="fa fa-home fa-1x"></i></a>
                 <a href="sobre_nosotros.html">Sobre nosotros</a>
                 <a href="inscripcion.html">Inscripción</a>
-                <a href="javascript:void(0)" onclick="document.getElementById('idcontraseña').style.display='block'">Miembros</a>
             </div>
         </div>
     </header>
@@ -131,23 +129,6 @@
         </div>
     </section>
 
-    <div id="idcontraseña" class="login">
-  
-        <form class="login-content animate">
-      
-          <div class="container">      
-            <a>Introduce la contraseña</a>
-            <input type="password" placeholder="Contraseña" name="contraseña" id="pswd" required>
-              
-            <button type="submit" onclick="comprobarcontraseña()">Enviar</button>
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('idcontraseña').style.display='none'" class="cancelbtn">Cerrar</button>
-          </div>
-        </form>
-      </div>
-
     <footer>
         <p class="footer">© 2023 Hecho en Ironhack!</p>
     </footer>
@@ -164,28 +145,6 @@
         } else {
             document.getElementById("Desktop_nav").style.padding = "3rem 2rem";
             document.getElementById("logo").style.fontSize = "2rem";
-        }
-    }
-</script>
-<script>
-    var modal = document.getElementById('idcontraseña');
-    
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
-<script>
-    function comprobarcontraseña() {
-        var contraseña = "1234";
-        var password = document.getElementById("pswd").value;
-        if (password == contraseña) {
-             window.location.href = "/miembros.html";
-             alert("Ha funcionado")
-        }
-        else{
-            alert("Contraseña incorrecta");
         }
     }
 </script>
