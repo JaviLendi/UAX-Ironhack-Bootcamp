@@ -503,50 +503,6 @@ button {
     to {transform: scale(1)}
   }
 
-.arrows {
-    position: absolute;
-    left: 50%;
-    margin: 0rem;
-    top: 70%;
-}
-
-.arrows path {
-    stroke: #fdfdfd;
-    fill: transparent;
-    stroke-width: 0.1rem;	
-    animation: arrow 2s infinite;
-    -webkit-animation: arrow 2s infinite; 
-}
-
-@keyframes arrow {
-    0% {opacity:0}
-    40% {opacity:1}
-    80% {opacity:0}
-    100% {opacity:0}
-}
-
-@-webkit-keyframes arrow  {
-    0% {opacity:0}
-    40% {opacity:1}
-    80% {opacity:0}
-    100% {opacity:0}
-}
-
-.arrows path.a1 {
-    animation-delay:-0.5s;
-    -webkit-animation-delay:-0.5s;  
-}
-
-.arrows path.a2 {
-animation-delay:-0.3s;
-    -webkit-animation-delay:-0.3s; 
-}
-
-.arrows path.a3 {	
-    animation-delay:0s;
-    -webkit-animation-delay:0s; 
-}
-
 /* Estilo para tablets */
 @media screen and (min-width: 580px) {
     html {
@@ -628,6 +584,9 @@ animation-delay:-0.3s;
 @media screen and (max-width: 580px) {
     html {
         font-size: 10px;
+    }
+    .Bienvenida{
+        background-position: center calc(20% + 35px);
     }
     .mobile-container {
         background-color: rgb(255, 255, 255);
@@ -756,8 +715,5 @@ animation-delay:-0.3s;
     }
     .Bienvenida {
         margin-top: 0rem;
-    }
-    .arrows {
-        top: 50%;
     }
 }
