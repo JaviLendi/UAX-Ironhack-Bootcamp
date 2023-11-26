@@ -11,23 +11,24 @@ body, header {
 .Bienvenida {
     display: flex;
     align-items: center;
-    background: url("https://www.uax.com/var/site/storage/images/_aliases/gradient_bg/9/8/2/6/256289-3-esl-ES/d39bfdd7e392-spot-fab.jpg") no-repeat;
+    background: linear-gradient(rgba(70, 131, 180, 0), rgba(54, 70, 117, 0.747)) ,url("Pictures/Wallpaper.png") no-repeat top left;
     background-size: cover;
     height: 40rem;
     flex-flow: row wrap;
     font-family: 'PT Sans', sans-serif;
-    color: #eee;
+    color: #0c264cff;
 }
 
 /* Sección de bienvenida de la página sobre nosotros*/
 #sobrenosotros {
     background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 3, 10, 0.747)) ,url("https://leemupm.com/wp-content/uploads/2023/08/1691940479455.jpg") no-repeat center;
     background-size: cover;
+    color: #ffffff;
 }
 
 /* Sección de bienvenida de la página inscripción*/
 #inscripcion {
-    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 3, 10, 0.747)) ,url("https://www.uax.com/var/site/storage/images/2/0/7/9/239702-1-esl-ES/640aa9c6cb82-HACKATHON2.png") no-repeat center;
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(54, 70, 117, 0.747)) ,url("Pictures/unete.jpg") no-repeat bottom right;
     background-size: cover;
 }
 
@@ -59,7 +60,7 @@ body, header {
     padding: .6rem;
     font-size: 2rem;
     border-radius: 1.2rem;
-    background-color: #E6A732;
+    background-color: #0c264cff;
     color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
 }
@@ -272,12 +273,12 @@ footer {
     float: left;
     color: black;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin-right: 1rem;
     text-decoration: none;
     font-size: 1.3rem;
     font-family: 'PT Sans', sans-serif;
-    border-radius: 3rem;
+    border-radius: 20rem;
 }
 #Desktop_nav #logo {
     margin-left: 2%;
@@ -292,7 +293,7 @@ footer {
     transition: .3s ease-in-out;
 }
 #Desktop_nav a.active {
-    background-color: #E6A732;
+    background-color: #0c264cff;
     color: white;
 }
 #Desktop_nav-right {
@@ -312,9 +313,9 @@ footer {
 input[type="text"], input[type="email"], input, select, textarea {
     width: 100%;
     padding: 1rem;
-    border: 1px solid rgb(207, 172, 12);
-    background-color: rgba(207, 171, 12, 0.103);
-    border-radius: 3rem;
+    border: 1px solid #0c264cff;
+    background-color: rgba(12, 38, 76, 0.099);
+    border-radius: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 1.4rem;
     resize: vertical;
@@ -325,7 +326,7 @@ label {
 }
 input[type="submit"] {
     width: 30%;
-    background-color: #E6A732;
+    background-color: #0c264cff;
     color: #fff;
     padding: 1rem 2rem;
     border: none;
@@ -336,10 +337,10 @@ input[type="submit"] {
     transition: .3s ease-in-out;
 }
 input[type=submit]:hover {
-    background-color: rgb(234, 136, 8);
+    background-color: rgb(24, 75, 152);
   }
 input::placeholder {
-    color: rgb(214, 166, 7);
+    color: #0c264cff;
     font-size: 1em;
     font-style: italic;
 }
@@ -370,7 +371,7 @@ input::placeholder {
     width: 100%;
 }
 #gracias {
-    background-color: #E6A732;
+    background-color: #0c264cff;
     color: #fff;
     padding: 1.5rem 4rem;
     border: none;
@@ -386,7 +387,7 @@ input::placeholder {
     border-radius: 3rem;
 }
 #gracias:hover {
-    background-color: rgb(182, 150, 8);
+    background-color: rgb(24, 75, 152);
 }
 
 /* Eliminar la barra de navegación para móvil */
@@ -405,7 +406,7 @@ input::placeholder {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(3, 19, 66, 0.4); 
     padding-top: 10rem;
     transition: .9s ease-in-out;
   }
@@ -417,7 +418,6 @@ input::placeholder {
     width: 60%; /* Could be more or less, depending on screen size */
     border-radius: 2.5rem;
     transition: .9s ease-in-out;
-
 }
 
 .container a {
@@ -502,6 +502,70 @@ button {
     from {transform: scale(0)} 
     to {transform: scale(1)}
   }
+
+.arrow-down {
+    width: 6rem;
+    height: 4rem;
+    position: relative;
+    bottom: 4rem;
+    animation: arrow 0.5s 1s infinite ease-out alternate;
+}
+
+.arrow-down:hover {
+    animation-play-state: paused;
+}
+
+.left, .right {
+    position: absolute;
+    background: black;
+    border-radius: 4px;
+}
+
+.left {
+    height: 1rem; /* Adjusted height for the left arrow */
+    width: 4rem; /* Adjusted width for the left arrow */
+    transform: rotate(120deg);
+    top: 1rem;
+    left: 1rem;
+    transform-origin: 50% 50%;
+    animation: leftArrow 0.5s 1s infinite ease-out alternate;
+}
+
+.right {
+    height: 0.1rem; /* Adjusted height for the right arrow */
+    width: 0.4rem; /* Adjusted width for the right arrow */
+    transform: rotate(-60deg);
+    top: 0.1rem;
+    left: 0.1rem;
+    transform-origin: 50% 50%;
+    animation: rightArrow 0.5s 1s infinite ease-out alternate;
+}
+
+@-webkit-keyframes arrow{
+0% {
+    bottom:0px;
+}
+100%{
+    bottom:40px;
+}
+}
+
+@-webkit-keyframes leftArrow{
+0% {
+}
+100%{
+    -webkit-transform:rotate(225deg);
+}
+}
+
+@-webkit-keyframes rightArrow{
+0% {
+}
+100%{
+    -webkit-transform:rotate(-45deg);
+}
+}
+
 
 /* Estilo para tablets */
 @media screen and (min-width: 580px) {
@@ -634,15 +698,15 @@ button {
         margin-bottom: 1rem;
         margin-right: 4rem;
         color: rgb(255, 255, 255);
-        background-color: #E6A732;
+        background-color: #0c264cff;
         font-family: 'PT Sans', sans-serif;
         font-size: 1.5rem;
     }
     .menu a:hover{
-        background-color: rgb(183, 183, 183);
+        background-color: rgb(25, 70, 138);
     }
     .menu a.active{
-        background-color: rgb(2, 1, 0);
+        background-color: rgb(15, 129, 244)
     }
 
     /* Icono del menú */

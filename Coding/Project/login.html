@@ -1,0 +1,18 @@
+ <!-- Para encriptar la pagina: https://www.maxlaumeister.com/pagecrypt/ -->
+ <div id="idcontraseña" class="login">
+  
+    <form onsubmit="comprobarcontraseña(event)" class="login-content animate">
+  
+      <div class="container">      
+        <a>Introduce la contraseña para acceder</a>
+        <input type="password" placeholder="contraseña" id="pswd" required>
+        <p id="message"></p>
+          
+        <button type="submit">Enviar</button>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('idcontraseña').style.display='none'" class="cancelbtn">Cerrar</button>
+      </div>
+    </form>
+  </div>

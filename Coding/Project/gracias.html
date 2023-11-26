@@ -13,7 +13,7 @@
         <!-- Navegación para movil  -->
         <div class="mobile_nav">
             <div class="mobile-container"></div>
-            <img src="https://www.cogitim.es/uploads/documentos/Repositorios/Documentos/Imagenes/Madrid%20Motor%20Student/UAX/UAX_logo.jpg" id="logo_mobile" alt="logo">
+            <img src="LOGO.png" id="logo_mobile" alt="logo">
             <!-- Hamburger icon -->
             <input class="side-menu" type="checkbox" id="side-menu"/>
             <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
@@ -23,13 +23,14 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="sobre_nosotros.html">Sobre nosotros</a> </li>
                     <li><a class="active" href="inscripcion.html">Inscripción</a></li>
+                    <li><a onclick="document.getElementById('idcontraseña').style.display='block'">Miembros</a></li>
                 </ul>
             </nav>
         </div>
 
         <!-- Navegación para ordenador -->
         <div id="Desktop_nav">
-            <img src="https://www.cogitim.es/uploads/documentos/Repositorios/Documentos/Imagenes/Madrid%20Motor%20Student/UAX/UAX_logo.jpg" id="logo"></a>
+            <img src="LOGO.png" id="logo"></a>
             <div id="navbar-right">
                 <a href="index.html"><i class="fa fa-home fa-3x"></i></a>
                 <a href="sobre_nosotros.html">Sobre nosotros</a>
@@ -48,18 +49,10 @@
         </div>
     </section>
 
-<script>
-    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-    window.onscroll = function () { scrollFunction() };
+    <div id="login"></div>
+    
+</body>
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-            document.getElementById("Desktop_nav").style.padding = "0.4rem 1rem";
-            document.getElementById("logo").style.fontSize = "2rem";
-        } else {
-            document.getElementById("Desktop_nav").style.padding = "3rem 2rem";
-            document.getElementById("logo").style.fontSize = "2rem";
-        }
-    }
-</script>
+<div id="footer"></div>
+
 </html>
