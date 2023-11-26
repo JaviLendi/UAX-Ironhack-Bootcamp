@@ -503,69 +503,6 @@ button {
     to {transform: scale(1)}
   }
 
-.arrow-down {
-    width: 6rem;
-    height: 4rem;
-    position: relative;
-    bottom: 4rem;
-    animation: arrow 0.5s 1s infinite ease-out alternate;
-}
-
-.arrow-down:hover {
-    animation-play-state: paused;
-}
-
-.left, .right {
-    position: absolute;
-    background: black;
-    border-radius: 4px;
-}
-
-.left {
-    height: 1rem; /* Adjusted height for the left arrow */
-    width: 4rem; /* Adjusted width for the left arrow */
-    transform: rotate(120deg);
-    top: 1rem;
-    left: 1rem;
-    transform-origin: 50% 50%;
-    animation: leftArrow 0.5s 1s infinite ease-out alternate;
-}
-
-.right {
-    height: 0.1rem; /* Adjusted height for the right arrow */
-    width: 0.4rem; /* Adjusted width for the right arrow */
-    transform: rotate(-60deg);
-    top: 0.1rem;
-    left: 0.1rem;
-    transform-origin: 50% 50%;
-    animation: rightArrow 0.5s 1s infinite ease-out alternate;
-}
-
-@-webkit-keyframes arrow{
-0% {
-    bottom:0px;
-}
-100%{
-    bottom:40px;
-}
-}
-
-@-webkit-keyframes leftArrow{
-0% {
-}
-100%{
-    -webkit-transform:rotate(225deg);
-}
-}
-
-@-webkit-keyframes rightArrow{
-0% {
-}
-100%{
-    -webkit-transform:rotate(-45deg);
-}
-}
-
 
 /* Estilo para tablets */
 @media screen and (min-width: 580px) {
