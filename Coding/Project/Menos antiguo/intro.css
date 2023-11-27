@@ -231,7 +231,7 @@ body, header {
   align-items: flex-end;
   align-content: flex-end;
 }
-.instalacion>a, .grados>a {
+.instalacion>a {
     margin: .2rem;
     font-size: 1rem;
     text-decoration: none;
@@ -240,7 +240,6 @@ body, header {
 p {
     font: 1rem 'PT Sans', sans-serif;
 }
-
 footer {
     color: grey;
     text-align: center;
@@ -251,6 +250,7 @@ footer {
     border-radius: 1rem;
     margin-bottom: 0.4rem;
 }
+
 
 /* Navegación para escritorio y tablets */
 #Desktop_nav {

@@ -10,6 +10,7 @@ body, header {
 /* Sección de bienvenida */
 .Bienvenida {
     display: flex;
+    align-items: center;
     background: linear-gradient(rgb(32, 80, 120), rgb(255, 255, 255));
     background-size: cover;
     height: 50rem;
@@ -104,6 +105,19 @@ body, header {
     color: #ffffff;
     height: 20rem;
 }
+.whatsapp {
+    margin: .5rem;
+    padding: .6rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.19);
+    align-items: flex-end;
+    align-content: flex-end;
+    color: #ffffff;
+    height: 15rem;
+}
 
 /* Imágenes de las distintas instalaciones */
 #instalacion1 {
@@ -189,8 +203,42 @@ body, header {
     width: 100%;
 }
 
+/* Imágenes de los distintos equipos */
+#whatsapp1 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("Pictures/qr.png");
+    background-color: #00112bff;
+    background-size:contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#whatsapp2 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("Pictures/qr.png");
+    background-color: #00112bff;
+    background-size:contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#whatsapp3 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("Pictures/qr.png");
+    background-color: #00112bff;
+    background-size:contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#whatsapp4 {
+    background:linear-gradient(rgba(70, 131, 180, 0), rgba(0, 0, 0, 0.685)) ,url("Pictures/qr.png");
+    background-color: #00112bff;
+    background-size:contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
 /* Animación cuando pasa el cursor por encima */
-.equipo:hover, .instalacion:hover, .grados:hover {
+.equipo:hover, .instalacion:hover, .grados:hover .whatsapp:hover {
     transition: all .3s ease-in-out;
     transform: scale(1.01);
 }
@@ -215,10 +263,11 @@ body, header {
 /* Estilo para el subtítulo */
 .subtitle {
     font-size: 1.2rem;
+    margin-bottom: 0rem;
 }
 
 /* Estilo para el título de cada cuadro*/
-.grados>h3, .instalacion>h3 {
+.grados>h3, .instalacion>h3 .subtitle>h3 {
     margin: 0.2rem;
     margin-bottom: 0rem;
     font-size: 1.5rem;
@@ -254,6 +303,16 @@ footer {
     width: 100%;
     border-radius: 1rem;
     margin-bottom: 0.4rem;
+}
+h5 {
+    margin-top: 0rem;
+    margin-bottom: -0.3rem;
+    font-size: 1rem;
+    color: grey;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
 }
 
 /* Navegación para escritorio y tablets */
@@ -533,7 +592,7 @@ button {
         width: 25%;
     }
     .Inicio>h1 {
-        font-size: 0rem;
+        font-size: 6rem;
     }
     .Inicio>a {
         font-size: 1rem;
@@ -574,7 +633,7 @@ button {
         width: 12.5%;
     }
     .Inicio>h1 {
-        font-size: 0rem;
+        font-size: 10rem;
     }
     .Inicio>a {
         font-size: 1.2rem;
@@ -597,7 +656,7 @@ button {
         font-size: 10px;
     }
     .Bienvenida{
-        background-position: center calc(20% + 35px);
+        /*background-position: center calc(20% + 35px); */
     }
     .mobile-container {
         background-color: rgb(255, 255, 255);
@@ -624,8 +683,8 @@ button {
         top: 0;
         right: 0;
         width: 11rem;
-        margin-left: 1rem;
-        margin-top: 1.5rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
     }
     ul{
         list-style: none;
@@ -719,7 +778,7 @@ button {
         width: 50%;
     }
     .Inicio>h1 {
-        font-size: 0rem;
+        font-size: 4rem;
     }
     .Inicio>a {
         font-size: 1rem;
