@@ -20,21 +20,22 @@
             <!-- Menu -->
             <nav class="nav">
                 <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="active" href="index.html">Inicio</a></li>
                     <li><a href="sobre_nosotros.html">Sobre nosotros</a> </li>
-                    <li><a class="active" href="inscripcion.html">Inscripción</a></li>
+                    <li><a href="inscripcion.html">Inscripción</a></li>
                     <li><a onclick="document.getElementById('idcontraseña').style.display='block'">Miembros</a></li>
                 </ul>
             </nav>
         </div>
-
+        
         <!-- Navegación para ordenador -->
         <div id="Desktop_nav">
-            <img src="LOGO.png" id="logo"></a>
+            <img src="LOGO.png" id="logo" alt="logo">
             <div id="navbar-right">
-                <a href="index.html"><i class="fa fa-home fa-3x"></i></a>
-                <a href="sobre_nosotros.html">Sobre nosotros</a>
-                <a class="active" href="inscripcion.html">Inscripción</a>
+                <a class="active" href="index.html"><i class="fa fa-home fa-1x"></i></a>
+                <a href="sobre_nosotros.html"><i class="fa fa-info fa-1x"></i></a>
+                <a href="inscripcion.html">Inscripción</a>
+                <a href="javascript:void(0)" onclick="document.getElementById('idcontraseña').style.display='block'">Miembros</a>
             </div>
         </div>
     </header>

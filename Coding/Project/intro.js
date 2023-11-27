@@ -43,7 +43,7 @@ function comprobarcontraseña() {
     var password = "1234";
     var contrasena = document.getElementById("pswd").value;
     if (contrasena == password) {
-        location.assign("https://javilendi.github.io/Coding/Project/miembros.html")
+        location.href("miembros.html")
     }
     else{
         let text = document.createTextNode('Contraseña incorrecta');
