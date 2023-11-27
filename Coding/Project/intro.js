@@ -29,21 +29,24 @@ function scrollFunction() {
 }
 
 // Load the login window
-var login = document.getElementById('idcontraseña');
+
 
 // To exit the window login
-window.onclick = function(event) {
-    if (event.target == login) {
+window.onclick = function(w) {
+    let login = document.getElementById('idcontraseña');
+    e.preventDefault();
+    if (e.target == login) {
         login.style.display = 'none';
-        console.log('Funciona');
     }
 }
 
-function comprobarcontraseña() {
+function comprobarcontraseña(e) {
+    e.preventDefault();
     var password = "1234";
     var contrasena = document.getElementById("pswd").value;
     if (contrasena == password) {
-        location.href="miembros.html"
+        location.href="https://javilendi.github.io/Coding/Project/miembros.html"
+        console.log('hola')
     }
     else{
         let text = document.createTextNode('Contraseña incorrecta');

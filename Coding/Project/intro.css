@@ -49,9 +49,25 @@ body, header {
 }
 .Inicio #logo {
     max-width: 40%;
-    margin-top: 5rem;
+    margin-top: 0rem;
     margin-left: 3.5vw
 }
+.Inicio {
+    visibility: hidden;
+    animation-name: intro;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes intro {
+    from {color: #fefefe00;
+          opacity: 0;
+          .Inicio #logo{
+            max-width: 10%;}}
+    to {visibility:visible;
+        opacity: 1;}
+  }
 
 /* Estilo para los cuadrados en donde va el distinto contenido de la página */
 .Formulario, .Instalaciones, .Titulaciones {
@@ -62,6 +78,11 @@ body, header {
     display: flex;
     text-align: left;
     flex-flow: row wrap;
+    animation-name: intro;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    
 }
 .Formulario>h2, .Instalaciones>h2, .Titulaciones>h2 {
     margin: .5rem;
