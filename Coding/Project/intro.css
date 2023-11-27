@@ -38,6 +38,9 @@ body, header {
     margin-left: 3vw;
     margin-bottom: -0.1rem;
 }
+.Inicio .empty {
+    font-size: 0rem;
+}
 .Inicio>a {
     display: flex;
     margin-left: 3.5vw;
@@ -46,7 +49,7 @@ body, header {
 }
 .Inicio #logo {
     max-width: 40%;
-    margin-top: 15rem;
+    margin-top: 5rem;
     margin-left: 3.5vw
 }
 
