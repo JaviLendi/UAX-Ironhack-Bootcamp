@@ -23,7 +23,7 @@ function scrollFunction() {
         document.getElementById("Desktop_nav").style.padding = "0.4rem 1rem";
         document.getElementById("logo").style.fontSize = "2rem";
     } else {
-        document.getElementById("Desktop_nav").style.padding = "3rem 2rem";
+        document.getElementById("Desktop_nav").style.padding = "3.5rem 2rem";
         document.getElementById("logo").style.fontSize = "2rem";
     }
 }
