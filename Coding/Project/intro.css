@@ -288,6 +288,7 @@ body, header {
 .subtitle {
     font-size: 1.2rem;
     margin-bottom: 0rem;
+    margin-top: 1rem;
 }
 
 /* Estilo para el título de cada cuadro*/
@@ -389,6 +390,7 @@ h5 {
     float: right;
     margin-right: 2rem;
 }
+
 
 /* Forumulario de inscripción */
 .form {
@@ -543,14 +545,17 @@ input::placeholder {
 }
 
 button {
-    background-color: #04AA6D;
+    background-color: rgb(3, 19, 66);
     color: white;
-    padding: 14px 20px;
+    padding: 1rem 3rem;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
-    border-radius: 3em;
+    width: fit-content;
+    border-radius: 4em;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 5rem;
   }
   
   button:hover {
@@ -595,7 +600,7 @@ button {
 /* Estilo para tablets */
 @media screen and (min-width: 580px) {
     html {
-        font-size: 10px;
+        font-size: 13px;
     }
     .Instalaciones, .Titulaciones {
         margin-top: 1rem;
@@ -628,19 +633,22 @@ button {
     .Bienvenida {
         margin-top: 9rem;
     }
+    button {
+        margin-left: 2rem;
+    }
 }
 
 /* Estilo para ordenador */
 @media screen and (min-width: 1024px) {
     html {
-        font-size: 10px;
+        font-size: 15px;
     }
     .Instalaciones, .Titulaciones {
         margin-top: 1vw;
     }
     .mobile_nav, .mobile-container {
         visibility: collapse;
-        margin-top: -10rem;
+        margin-top: -30rem;
     }
     #Desktop_nav a {
         font-size: 1.5rem;
@@ -657,6 +665,9 @@ button {
     #div2 {
         width: 12.5%;
     }
+    .Inicio {
+        margin-top: 30rem;
+    }
     .Inicio>h1 {
         font-size: 10rem;
     }
@@ -667,18 +678,22 @@ button {
         max-width: 30%; 
     }
     .Bienvenida {
-        margin-top: 10rem;
-        height: 35vw;
+        margin-top: 15rem;
+        height: 60vw;
+        margin-bottom: 30rem;
     }
     .equipo {
         height: 30rem;
+    }
+    button {
+        margin-left: 3rem;
     }
 }
 
 /* Estilo para móviles */
 @media screen and (max-width: 580px) {
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
     .Bienvenida{
         /*background-position: center calc(20% + 35px); */
@@ -707,9 +722,9 @@ button {
         display: fixed;
         top: 0;
         right: 0;
-        width: 11rem;
+        width: 14rem;
         margin-left: 2rem;
-        margin-top: 2rem;
+        margin-top: 1.2rem;
     }
     ul{
         list-style: none;
@@ -812,9 +827,12 @@ button {
         right: 1rem;
         max-width: 25rem;
         visibility: visible;
-        margin-top: 17rem;
+        margin-top: 6rem;
     }
     .Bienvenida {
         margin-top: 0rem;
+    }
+    button {
+        margin-left: 1rem;
     }
 }
