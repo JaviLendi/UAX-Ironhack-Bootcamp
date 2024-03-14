@@ -548,13 +548,11 @@ button {
     background-color: rgb(3, 19, 66);
     color: white;
     padding: 1rem 3rem;
-    margin: 8px 0;
     border: none;
     cursor: pointer;
     width: fit-content;
     border-radius: 4em;
     margin-top: 2rem;
-    margin-left: 3rem;
     margin-right: 5rem;
   }
   
@@ -633,15 +631,12 @@ button {
     .Bienvenida {
         margin-top: 9rem;
     }
-    button {
-        margin-left: 2rem;
-    }
 }
 
 /* Estilo para ordenador */
 @media screen and (min-width: 1024px) {
     html {
-        font-size: 15px;
+        font-size: 12.5px;
     }
     .Instalaciones, .Titulaciones {
         margin-top: 1vw;
@@ -684,9 +679,6 @@ button {
     }
     .equipo {
         height: 30rem;
-    }
-    button {
-        margin-left: 3rem;
     }
 }
 
@@ -831,8 +823,5 @@ button {
     }
     .Bienvenida {
         margin-top: 0rem;
-    }
-    button {
-        margin-left: 1rem;
     }
 }
